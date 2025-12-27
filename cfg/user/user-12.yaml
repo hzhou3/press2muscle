@@ -1,0 +1,32 @@
+CUDA: true
+SEED: 777
+NUM_WORKERS: 8
+DATASET_PATH: ./dataset
+PROTOCOL: user-12
+INPUT_DIM: 36
+OUTPUT_DIM: 8
+TRAIN_DATASET_REPEAT_TIMES: 500
+INPUT_MOTION_LENGTH: 30
+FPS: 20
+BATCH_SIZE: 512
+LR: 1e-4
+EPOCH: 15
+WEIGHT_DECAY: 1e-3
+MILESTONES:
+- 45
+- 48
+MASK: false
+MASK_RATIO: 0.5
+LOSS:
+  recons_y: 1.0
+  smooth_loss: 0.1
+OVERLAPPING_TEST: false
+NUM_PER_BATCH: 1024
+MODEL_CFG:
+  embed_type: cbam
+  n_layers:
+  - 2
+  - 4
+  hid_dim: 512
+  heads: 4
+  dropout: 0.0
