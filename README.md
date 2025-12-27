@@ -33,8 +33,7 @@ Train, val and test files are now stored in `datasets/protocols/user-12_*.txt`
 
 ##### 3. Preparing Config
 
-in `cfg/user/user-12.yaml`, update `PROTOCOL` to `user-12`
-similar for other users.
+in `cfg/user/user-12.yaml`, update `PROTOCOL` to `user-12`; similar for other users.
 
 
 ##### 4. Training 
@@ -45,12 +44,11 @@ similar for other users.
 ### TODOs
 - [x] release code
 - [ ] detailed comments and explanations for the codebase
-- [ ] reorg all dataset
+
 
 
 
 ### Platform
-
 
 ![](misc/plat.png) (a) The platform consists of multiple flexible film pressure sensors from two feet (b) with compact data collection boards that support wireless data streaming. (c) The platform can be seamlessly inserted into shoes with negligible impact on users’ appearance and movements.
 
